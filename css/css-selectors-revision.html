@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* Combinators - We can target any element by using the relation between twoo elements */
+        .container{
+            font-style: italic;  
+        }
+
+        .navigation-container{
+            color:gold;
+        }
+
+        .custom-color{
+            background-color: royalblue;
+        }
+
+/* Descendant selector
+syntax : Parent Element space Target Element */
+        .container nav ul li{
+            display: inline;
+        }
+
+        ul li {
+            color:lawngreen;
+        }
+
+/* child selector 
+syntax : parent element > target/child element */
+       div.container nav ul > li {
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors</h1>
+    </header>
+
+    <div class="container navigation-container custom-color">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="navigation-container">
+
+    </div>
+
+    <div class="container">One</div>
+    <div class="container">Two</div>
+</body>
+</html>
