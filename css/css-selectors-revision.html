@@ -1,65 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
+      /* Combinators - We can target any element by using the relation between twoo elements */
+      .container {
+        font-style: italic;
+      }
 
-        /* Combinators - We can target any element by using the relation between twoo elements */
-        .container{
-            font-style: italic;  
-        }
+      .navigation-container {
+        color: gold;
+      }
 
-        .navigation-container{
-            color:gold;
-        }
+      .custom-color {
+        background-color: royalblue;
+      }
 
-        .custom-color{
-            background-color: royalblue;
-        }
-
-/* Descendant selector
+      /* Descendant selector
 syntax : Parent Element space Target Element */
-        .container nav ul li{
-            display: inline;
-        }
+      .container nav ul li {
+        display: inline;
+      }
 
-        ul li {
-            color:lawngreen;
-        }
+      ul li {
+        color: lawngreen;
+      }
 
-/* child selector 
+      /*syntax */
+
+      /*It will target such span element which will come after p element*/
+      p span {
+        background-color: darkgoldenrod;
+      }
+
+      /* child selector 
 syntax : parent element > target/child element */
-       div.container nav ul > li {
-            color: maroon;
-        }
+      div.container nav ul > li {
+        color: maroon;
+      }
+
+      div > a {
+        color: crimson;
+      }
+
+
+      .card{
+          border: 2px solid black;
+          width: 300px;
+      }
+
+
+      p+span{
+          color:darkred
+      }
     </style>
-</head>
-<body>
-    <header>
-        <h1>CSS Selectors</h1>
+  </head>
+  <body>
+    <header class="custom-color">
+      <h1>CSS Selectors</h1>
     </header>
 
     <div class="container navigation-container custom-color">
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
     </div>
 
-
-    <div class="navigation-container">
-
+    <div>
+      <p>
+        <a href="http://www.codekul.com">Codekul</a>
+      </p>
     </div>
+    <div class="navigation-container"></div>
 
     <div class="container">One</div>
     <div class="container">Two</div>
-</body>
+
+    <section>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          quidem deserunt commodi ducimus nemo corrupti vel consequatur ratione,
+          natus quia quos id facere quibusdam ab! Non sequi perspiciatis
+          molestias. Neque.
+        </p>
+        <span>Span Element1</span>
+        <a href="https://wwww.google.com">Google</a>
+        <span>Span Element2</span>
+      </article>
+
+      <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        quidem deserunt commodi ducimus nemo corrupti vel consequatur ratione,
+        natus quia quos id facere quibusdam ab! Non sequi perspiciatis
+        molestias. Neque.
+      </article>
+    </section>
+
+    <div class="card">
+      <img
+        style="height: 300px; width: 300px"
+        src="../images/img2.jpg"
+        alt="img1"
+      />
+      <h1>News Title</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum
+        illum qui suscipit inventore quibusdam praesentium iusto quos velit
+        nesciunt officia voluptas doloremque error nihil repudiandae vero
+        architecto, quasi nobis.
+      </p>
+
+      <span>News Tag</span>
+    </div>
+
+
+    <div class="card">
+        <img
+          style="height: 300px; width: 300px"
+          src="../images/img2.jpg"
+          alt="img1"
+        />
+        <h1>News Title</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum
+          illum qui suscipit inventore quibusdam praesentium iusto quos velit
+          nesciunt officia voluptas doloremque error nihil repudiandae vero
+          architecto, quasi nobis.
+        </p>
+  
+        <span>News Tag</span>
+      </div>
+
+      
+      <div class="card">
+        <img
+          style="height: 300px; width: 300px"
+          src="../images/img2.jpg"
+          alt="img1"
+        />
+        <h1>News Title</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum
+          illum qui suscipit inventore quibusdam praesentium iusto quos velit
+          nesciunt officia voluptas doloremque error nihil repudiandae vero
+          architecto, quasi nobis.
+        </p>
+  
+        <span>News Tag</span>
+      </div>
+
+      
+      <div class="card">
+        <img
+          style="height: 300px; width: 300px"
+          src="../images/img2.jpg"
+          alt="img1"
+        />
+        <h1>News Title</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum
+          illum qui suscipit inventore quibusdam praesentium iusto quos velit
+          nesciunt officia voluptas doloremque error nihil repudiandae vero
+          architecto, quasi nobis.
+        </p>
+  
+        <span>News Tag</span>
+      </div>
+  
+
+    <footer>Footer</footer>
+  </body>
 </html>
