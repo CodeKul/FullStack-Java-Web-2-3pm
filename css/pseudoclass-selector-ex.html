@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* pseudo selector elements syntax 
+        element : selector {
+
+        } */
+
+
+        header li{
+            display: inline;
+        }
+
+        a:link{
+            color: chartreuse;
+            /* background-color: crimson; */
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: chartreuse;
+        }
+
+        a:hover{
+            color: deeppink;
+            font-size: xx-large;
+            background-color: gold;
+        }
+
+        @keyframes blink {
+            0%  {opacity: 1; color: gold;}
+            50% {opacity: 0; color: green;}
+            100% {opacity: 1; color: red;}
+        }
+
+        #home{
+            animation: blink 1s ease-in infinite;
+        }
+
+        img:hover{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: red 3px solid;
+        }
+
+/*It will target such p element which is a last child of its parent element*/
+
+/* syntax 
+target element :  position {}
+target element : first-child {
+
+} */
+ p:nth-child(3){
+    color: seagreen;
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- pseudo class selectors are selectors which are used when there is some event. -->
+<marquee direction="left">This a Marquee Tag</marquee>
+    <header>
+        <ul>
+            <li id="home"> <a href="http://www.codekul.com">Home</a></li>
+            <li> <a href="http://www.codekul.com">About</a></li>
+            <li> <a href="http://www.codekul.com">Blog</a></li>
+            <li> <a href="http://www.codekul.com">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <!-- <div class="one">
+        <img src="../images/3.jpg" height="300px" width="500px" alt="img1">
+        <img src="../images/3.jpg" height="300px" width="500px" alt="img1">
+        <img src="../images/3.jpg" height="300px" width="500px" alt="img1">
+    </div> -->
+
+
+    <div>
+        <p>Seven</p>
+        <p>Six</p>
+        <p>Five</p>
+        <p>Four</p>
+    </div>
+    <div>
+        <p>Three</p>
+        <p>Two</p>
+    </div>
+
+    <p>One</p>
+</body>
+</html>
