@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+      /* p::first-letter{
+          font-size: xx-large;
+          color: red;
+      } */
+
+
+      /* first-letter selector is implemented for only Block Level Elements */
+
+      div::first-letter{
+          color: darkorange;
+          font-size: xx-large;
+          font-style: italic;
+      }
+
+
+      p::first-line{
+          color: darkred;
+      }
+
+      li::before{
+          content: 'Փ';
+      }
+
+      li::after{
+          content: "*";
+          border-left: solid 2px;
+          height: 2px;
+      }
+
+      li{
+          list-style: none;
+      }
+
+      p::selection{
+          color: gold;
+          background-color: darkturquoise;
+      }
+
+
+
+
+  </style>
+  <body>
+    <!-- First line of paragraph
+    First Character of paragraph
+    To add any content before an element or after an element -->
+
+    <div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        doloremque incidunt tenetur similique adipisci laudantium architecto
+        voluptatibus officiis provident,
+        
+      </p>
+
+      <ul>
+          <li>one</li>
+          <li>two</li>
+          <li>three</li>
+          <li>four</li>
+      </ul>
+
+
+      <input type="text">
+
+      
+    </div>
+  </body>
+</html>

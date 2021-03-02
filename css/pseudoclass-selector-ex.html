@@ -62,6 +62,12 @@ target element : first-child {
     color: seagreen;
 }
 
+/*checked selector is used to apply css when we select any element (radio button/ checkbox */
+
+input:checked{
+    box-shadow: 2px 1px 8px red;
+
+}
 
         
     </style>
@@ -98,5 +104,11 @@ target element : first-child {
     </div>
 
     <p>One</p>
+
+
+    <input type="radio" checked>
+    <input type="radio">
+
+    <input type="checkbox">
 </body>
 </html>
