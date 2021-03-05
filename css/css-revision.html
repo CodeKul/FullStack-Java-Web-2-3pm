@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=cla, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      header {
+        text-align: center;
+      }
+      header > img {
+        height: 100px;
+        width: 400px;
+      }
+
+      .column-2 {
+        float: left;
+        width: 200px;
+      }
+
+      .flex-ex {
+        display: flex;
+      }
+
+      .flex-ex img {
+        width: 200px;
+      }
+
+      #main-heading {
+        color: red;
+        text-decoration: underline;
+      }
+
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+      }
+      .flex-row img {
+        width: 80px;
+        height: 80px;
+      }
+
+      nav li{
+          display: inline;
+      }
+
+      [href = "http://www.codekul.com"] {
+          background-color: royalblue;
+      }
+
+      [href$="com" ]{
+          background-color: yellow;
+      }
+
+      [href^="https"]{
+          background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- class selector 
+    ID selector
+     -->
+
+    <header>
+      <h1 id="main-heading">CSS Revision</h1>
+      <img src="../images/pattern.png" alt="" />
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="http://www.codekul.com">Home</a></li>
+            <li><a href="https://www.google.com">About</a></li>
+            <li><a href="https://www.github.com">Blog</a></li>
+            <li><a href="https://www.twitter.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+      <div class="column-1">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto qui,
+          harum eos est ipsam beatae et, error illo fuga nihil quo. Delectus ea
+          voluptatum totam asperiores perferendis perspiciatis quis illum!
+        </p>
+      </div>
+
+      <div class="column-2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eos
+        voluptatibus voluptatum aut itaque cum nihil laboriosam reiciendis minus
+        deleniti consequuntur minima, commodi, autem doloremque beatae similique
+        odit repellendus nostrum.
+      </div>
+
+      <section class="flex-ex">
+        <div class="flex-item flex-row">
+          <img src="../images/3.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+            suscipit neque illo odio. 
+          </p>
+        </div>
+
+        <div class="flex-item">
+          <img src="../images/5.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+            veniam accusamus soluta velit quod natus voluptatibus veritatis!
+            Sint dignissimos nisi eum architecto quaerat eos. Aliquid maxime
+            adipisci reprehenderit excepturi debitis.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
