@@ -57,6 +57,70 @@
       [href^="https"]{
           background-color: teal;
       }
+
+      [class |= "main"] {
+        background-color: crimson;
+        color: darkorange;
+      }
+
+      [class ~= "main"] {
+        background-color: crimson;
+        color: darkorange;
+      }
+
+      .main-container .column-1 p{
+        background-color: darksalmon;
+        color: darkred;
+      }
+
+      .main-container .column-1 > p{
+        background-color: darksalmon;
+        color: rgb(54, 211, 40);
+      }
+
+      img+p{
+        color: darkred;
+        background-color: gold;
+      }
+
+      img~p{
+        color: rgb(56, 139, 0);
+        background-color: gold;
+      }
+
+      nav a:link{
+        color: hotpink;
+        background-color: indigo;
+        font-size: xx-large;
+      
+      }
+
+      a:visited{
+        color: lawngreen;
+        background-color: lightseagreen;
+        /* font-size: xx-small; */
+      }
+
+
+li:active{
+  background-color: cornsilk;
+  color: crimson;
+  
+}
+
+input:focus{
+  background-color: gray;
+}
+
+
+input:required{
+  border: rgb(20, 207, 220) solid 2px;
+}
+
+
+      
+
+      
     </style>
   </head>
   <body>
@@ -80,6 +144,8 @@
 
     <div class="main-container">
       <div class="column-1">
+        <label>Text input field</label>
+        <input type="text" required>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto qui,
           harum eos est ipsam beatae et, error illo fuga nihil quo. Delectus ea
@@ -112,6 +178,22 @@
             adipisci reprehenderit excepturi debitis.
           </p>
         </div>
+
+
+        <div>
+          <p>One</p>
+          <img src="../images/4.jpg" alt="">
+          <p>Two</p>
+          <p>Three</p>
+
+
+          <p>One</p>
+          <img src="../images/4.jpg" alt="">
+          <p>Two</p>
+          <p>Three</p>
+        </div>
+
+       
       </section>
     </div>
   </body>
