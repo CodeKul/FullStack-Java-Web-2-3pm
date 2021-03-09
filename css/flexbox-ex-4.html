@@ -28,7 +28,11 @@ align-items: flex-end    bottom to top
 
             justify-content:space-around;
             justify-content: space-evenly;
+
+            justify-items: center;
             /* align-items: flex-end; */
+
+            /* align-content: flex-start; */
 
             flex-wrap: wrap;
 
@@ -44,6 +48,10 @@ align-items: flex-end    bottom to top
             width: 100px;
             border: solid 2px black;
             margin: 10px;
+        }
+
+        .item-1{
+            align-self: flex-end;
         }
     </style>
 </head>
@@ -64,7 +72,7 @@ align-items: flex-end    bottom to top
         <div class="flex-items">Two</div>
         <div class="flex-items">Three</div>
 
-        <div class="flex-items">One</div>
+        <div class="flex-items item-1">One</div>
         <div class="flex-items">Two</div>
         <div class="flex-items">Three</div>
 

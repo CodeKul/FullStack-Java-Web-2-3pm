@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .column {
+        display: flex;
+        border: solid 2px red;
+      }
+
+      .vertical-column {
+        display: flex;
+        flex-direction: column;
+      }
+
+      img{
+          height: 60px;
+          width: 100px;
+      }
+
+      .content{
+          display: flex;
+          flex-direction: row;
+          border: solid 2px blue;
+          margin: 5px;
+      }
+
+      p{
+          margin-top: 0;
+      }
+
+      .horizontal-column{
+          display: flex;
+          flex-direction: column;
+      }
+
+      .horizontal-column .content {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .horizontal-column img{
+          width: 280px;
+          height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Flexbox Example</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="column vertical-column">
+        <div class="content">
+          <img src="../images/3.jpg" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            eos voluptate tempore ad expedita minima eius doloribus minus
+            asperiores eligendi quo, laborum ex, saepe animi consequuntur
+            facilis corporis quae! Ipsam.
+          </p>
+        </div>
+        <div class="content">
+            <img src="../images/3.jpg" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              eos voluptate tempore ad expedita minima eius doloribus minus
+              asperiores eligendi quo, laborum ex, saepe animi consequuntur
+              facilis corporis quae! Ipsam.
+            </p>
+
+
+        </div>
+        <div class="content">
+            <img src="../images/3.jpg" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            eos voluptate tempore ad expedita minima eius doloribus minus
+            asperiores eligendi quo, laborum ex, saepe animi consequuntur
+            facilis corporis quae! Ipsam.
+          </p>
+
+
+
+        </div>
+      </div>
+
+
+      <div class="column vertical-column">
+        <div class="content">
+            <img src="../images/3.jpg" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              eos voluptate tempore ad expedita minima eius doloribus minus
+              asperiores eligendi quo, laborum ex, saepe animi consequuntur
+              facilis corporis quae! Ipsam.
+            </p>
+          </div>
+          <div class="content">
+              <img src="../images/3.jpg" alt="" />
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                eos voluptate tempore ad expedita minima eius doloribus minus
+                asperiores eligendi quo, laborum ex, saepe animi consequuntur
+                facilis corporis quae! Ipsam.
+              </p>
+  
+  
+          </div>
+          <div class="content">
+              <img src="../images/3.jpg" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              eos voluptate tempore ad expedita minima eius doloribus minus
+              asperiores eligendi quo, laborum ex, saepe animi consequuntur
+              facilis corporis quae! Ipsam.
+            </p>
+  
+  
+  
+          </div>
+      </div>
+      <div class="column horizontal-column">
+        <div class="content">
+            <img src="../images/3.jpg" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              eos voluptate tempore ad expedita minima eius doloribus minus
+              asperiores eligendi quo, laborum ex, saepe animi consequuntur
+              facilis corporis quae! Ipsam.
+            </p>
+
+
+        </div>
+        <div class="content">
+            <img src="../images/3.jpg" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              eos voluptate tempore ad expedita minima eius doloribus minus
+              asperiores eligendi quo, laborum ex, saepe animi consequuntur
+              facilis corporis quae! Ipsam.
+            </p>
+
+
+        </div>
+        <!-- <div class="content">
+            <img src="../images/3.jpg" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              eos voluptate tempore ad expedita minima eius doloribus minus
+              asperiores eligendi quo, laborum ex, saepe animi consequuntur
+              facilis corporis quae! Ipsam.
+            </p>
+
+
+        </div> -->
+      </div>
+    </main>
+  </body>
+</html>
