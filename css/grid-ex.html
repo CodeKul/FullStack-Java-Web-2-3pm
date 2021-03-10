@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-container {
+        display: grid;
+        /* grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto minmax(100px 200px); */
+        grid-template-columns: repeat(auto auto);
+        
+        /* grid-template-columns: repeat(5, autofill); */
+
+
+        /* repeat(value width/height) --> value defines how many columns or rows should be repeated 
+        width defines the size of a width/height for a column or a row */
+
+
+    
+      }
+
+      img{
+          height: 100px;
+          width: 200px;
+      }
+
+      .one{
+          grid-column-start: 1;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 2;
+
+
+          
+          
+          
+      }
+      .one img{
+          width: 100%;
+          height: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="grid-items">
+        <img src="../images/2.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, aut
+          facilis adipisci cumque velit et error molestiae atque illo possimus
+          illum quidem recusandae dolor optio molestias accusantium eligendi
+          natus autem?
+        </p>
+      </div>
+
+      <div class="grid-items">
+        <img src="../images/2.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, aut
+          facilis adipisci cumque velit et error molestiae atque illo possimus
+          illum quidem recusandae dolor optio molestias accusantium eligendi
+          natus autem?
+        </p>
+      </div>
+      <div class="grid-items">
+        <img src="../images/2.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, aut
+          facilis adipisci cumque velit et error molestiae atque illo possimus
+          illum quidem recusandae dolor optio molestias accusantium eligendi
+          natus autem?
+        </p>
+      </div>
+
+
+      <div class="grid-items one">
+        <img src="../images/2.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, aut
+          facilis adipisci cumque velit et error molestiae atque illo possimus
+          illum quidem recusandae dolor optio molestias accusantium eligendi
+          natus autem?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
