@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            display: grid;
+            grid-template-columns: 700px 150px;
+        }
+
+        .column-1{
+            display: grid;
+            grid-template-columns: 100px auto;
+        }
+
+        #dropdown-2{
+            size: 20;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="column-1">
+            <!-- <h2>Billing Address</h2> -->
+
+            <label for="firstname">First name</label>
+            <input type="text">
+
+            <label for="lastname">Last name</label>
+            <input type="text"> 
+
+
+            <!-- to increase the length of input field use size attribute -->
+            <label for="username">Username</label>
+            <input type="text" size="60"> 
+
+            <label for="email">Email</label>
+            <input type="email" size="60"> 
+
+            <label for="address">Address</label>
+            <input type="text" size="60"> 
+
+
+            <select>
+                <option value="">Pune</option>
+                <option value="">Mumbai</option>
+                <option value="">Banglore</option>
+            </select>
+
+
+            <select id="dropdown-2">
+                <option value="">Pune</option>
+                <option value="">Mumbai</option>
+                <option value="">Banglore</option>
+            </select>
+
+
+            
+        </div>
+
+        <div class="column-2">
+            Your Cart
+        </div>
+    </div>
+</body>
+
+</html>

@@ -16,3 +16,6 @@
 .flex-container .flex-items{
     width: 150px;
 }
+
+/* use repeat(no of columns or rows value, width/height value) 
+This property is used only when we use grid-template-rows or grid-template-columns */
