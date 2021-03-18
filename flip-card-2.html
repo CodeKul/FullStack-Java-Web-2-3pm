@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .front-card{
+            background-color: green;
+            position: absolute;
+            width: 300px;
+            backface-visibility: hidden;
+        }
+
+        .back-card{
+            background-color: blue;
+            position: absolute;
+            width: 300px;
+            backface-visibility: hidden;
+        }
+
+
+        .container:hover{
+            transform: rotateY(180deg);
+            transition-duration: 3s;
+        }
+
+        .back-card:hover{
+            transform: rotateY(180deg);
+            transition-duration: 3s;
+        }
+
+        .flip-card{
+            position: absolute;
+        }
+
+        .scale:hover{
+            transform: scale(3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flip-card">
+            <div class="front-card">
+one
+            </div>
+
+            <div class="back-card">
+two
+            </div>
+        </div>
+    </div>
+
+    <div class="scale">
+        Scale
+    </div>
+</body>
+</html>

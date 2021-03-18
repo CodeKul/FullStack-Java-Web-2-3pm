@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .wrapper{
+            border: solid 1px black;
+            transform-style: preserve-3d;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
+        .back-card, .front-card{
+            position: absolute;
+        }
+
+        .front-card{
+            background-color: red;
+        }
+
+        .back-card{
+            background-color: blue;
+            
+        }
+
+        .front-card, .back-card{
+            backface-visibility: hidden;
+        }
+
+        .wrapper:hover{
+            transform: rotateY(180deg);
+            transition-duration: 3s;
+        }
+
+        .back-card:hover{
+            transform: rotateY(180deg);
+            transition-duration: 3s;
+
+            /* backface-visibility: visible; */
+        }
+
+        .flip-card{
+            position: relative;
+        }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="wrapper">
+
+    
+    <div class="flip-card">
+      <div class="front-card">
+          <h4>Front Card</h4>
+        <!-- <img src="../images/3.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          quae asperiores quibusdam? Rerum eum labore quae fugiat ea distinctio
+          blanditiis impedit excepturi tempore consectetur dolor, dolorem sequi,
+          quam alias totam.
+        </p> -->
+      </div>
+
+      <div class="back-card">
+          <!-- <h4>Back Card</h4>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+        repellendus nihil earum debitis sunt! Ea molestias corporis, eaque
+        consequatur quam nostrum rem labore accusantium suscipit quas
+        consequuntur repudiandae aspernatur corrupti? -->
+      </div>
+    </div>
+
+</div>
+  </body>
+</html>
