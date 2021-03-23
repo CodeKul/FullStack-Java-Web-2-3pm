@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: solid 2px red;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .items {
+        border: solid 2px blue;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+
+        @media all and (max-width: 320px) {
+          .container {
+            flex-direction: row;
+            background-color: black;
+            color: white;
+          }
+        }
+
+
+        @media print and (max-width:991px) and (orientation:portrait){
+            .container{
+                background-color: gray;
+                font-size: xx-large;
+                color: green;
+            }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, amet
+        Nostrum, veritatis doloribus?
+      </div>
+      <div class="items">
+        dolores. Obcaecati esse modi sapiente explicabo atque quos, natus
+      </div>
+      <div class="items">
+        tempore, expedita earum est perferendis reiciendis similique ducimus!
+      </div>
+      <div class="items">
+        tempore, expedita earum est perferendis reiciendis similique ducimus!
+      </div>
+    </div>
+  </body>
+</html>
