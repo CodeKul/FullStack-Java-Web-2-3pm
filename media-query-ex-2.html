@@ -23,17 +23,45 @@
         color: red;
         font-size: xx-large;
       }
-
+/* 
       @media all and (max-width:991px) {
         .container{
           flex-wrap: wrap;
+        } */
+
+
+        @media screen and (max-width:991px) {
+
+          .container{
+            flex-direction: column;
+            background-color: black;
+            color: white;
+          }
+
         }
-      }
+
+
+        @media all and (max-width:600px){
+          .one{
+            width: 50%;
+          }
+
+          .two{
+            width: 20%;
+          }
+          
+
+          .container{
+            flex-wrap: wrap;
+          }
+        }
+      
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="flex-item">
+
+      <div class="flex-item one">
         <i class="bi bi-basket"></i>
         <i class="far fa-angry"></i>
 
@@ -46,19 +74,19 @@
         optio nostrum quia earum, omnis praesentium! Impedit dolorem dolor
         asperiores laboriosam quasi.
       </div>
-      <div class="flex-item">
+      <div class="flex-item two">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque libero
         necessitatibus, quis veritatis rem voluptatibus esse repellat aperiam
         optio nostrum quia earum, omnis praesentium! Impedit dolorem dolor
         asperiores laboriosam quasi.
       </div>
-      <div class="flex-item">
+      <div class="flex-item three">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque libero
         necessitatibus, quis veritatis rem voluptatibus esse repellat aperiam
         optio nostrum quia earum, omnis praesentium! Impedit dolorem dolor
         asperiores laboriosam quasi.
       </div>
-      <div class="flex-item">
+      <div class="flex-item four">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque libero
         necessitatibus, quis veritatis rem voluptatibus esse repellat aperiam
         optio nostrum quia earum, omnis praesentium! Impedit dolorem dolor
